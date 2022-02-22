@@ -2,6 +2,11 @@
     "files.associations": {
         "iostream": "cpp",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "string": "cpp",
+        "regex": "cpp",
+        "typeinfo": "cpp"
     }
 }
