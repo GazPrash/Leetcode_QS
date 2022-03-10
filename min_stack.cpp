@@ -34,6 +34,5 @@ class MinStack{
 };
 
 int main(){
-    
     return 0;
 }
