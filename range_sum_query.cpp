@@ -3,18 +3,19 @@ using namespace std;
 
 class NumArray {
 public:
-    vector<int> arr;
-
+    vector<int> numarr;
     NumArray(vector<int>& nums) {
-        arr = nums;
+        numarr = nums;
     }
+    
+    void update(int index, int val) {
+        numarr[index] = val;
+    }
+    
     int sumRange(int left, int right) {
-        int summ = 0;
-        for (int i = left; i <=right; i++){
-            summ += arr[i];
-        }
-        
-        return summ;
+        int out = 0;
+        for (int i = left; i <= right; i++) out += numarr[i];
+        return out;
     }
 };
 

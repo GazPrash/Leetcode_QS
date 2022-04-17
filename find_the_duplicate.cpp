@@ -21,6 +21,23 @@ public:
 
 };
 
+// Alternate soln | This will fail because nums can repeat more than one times
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        unsigned long long n = nums.size();
+        unsigned long long expected_sum = ((n+1) * n) / 2, actual_sum = 0;
+
+        for (int k : nums){
+            actual_sum += k;
+        }
+
+        return actual_sum - expected_sum + n;
+    }
+
+};
+
 int main(){
     
     return 0;

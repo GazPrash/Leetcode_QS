@@ -12,9 +12,6 @@ bool move_forw(string base, vector<string>& deadends, int ind, int diff){
 int openLock(vector<string>& deadends, string target) {
     string base = "0000";
 
-    
-
-
 }
 
 int main(){

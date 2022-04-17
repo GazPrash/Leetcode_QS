@@ -26,7 +26,6 @@ public:
             new_node = prev;
         }
         new_node->val = mx;
-
         bool left_on = 1;
         for (int k : arr){
             if (k == mx){
@@ -40,7 +39,6 @@ public:
                 right.push_back(k);
             }
         }
-        
 
         if (left.size() == 1){
             TreeNode* nextl = new TreeNode;

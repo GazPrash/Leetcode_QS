@@ -27,8 +27,42 @@ public:
     }
 };
 
+// Alternate Soln | Accepted
 
-// Alternate working soln : 
+class Solution {
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+        int gasLeft = 0, breakInd = 0, laps = 0;
+
+
+        while (laps < gas.size()){
+
+            for (int i = laps; i < gas.size(); i++){
+                gasLeft += gas[i];
+                if (gasLeft < cost[i]){
+                    gasLeft = 0;
+                    breakInd = i;
+                    break;
+                } else {
+                    gasLeft -= cost[i];
+                }
+
+            }
+
+            laps++;
+
+
+        }
+                
+        
+    }
+};
+
+
+
+
+
+// Alternate working soln - Exceeds Time Complexity for few cases : 
 
 // int i = 0;
 // int gas_left = 0;
